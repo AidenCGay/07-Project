@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Tennis 101 is dedicated to helping you understand the game of tennis.">
+    <meta name="author" content="Aiden C.G.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tennis 101: The Ultimate Guide</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+   <!--Paste your font lines here.-->
+
+</head>
+<body>
+    <!-- Start the page header -->
+    <header>
+        <span>
+            <br>
+            Tennis 101 <br>
+            <br>
+        </span>
+    </header>
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Setup</a></li>
+            <li><a href="two.html">Rules</a></li>
+            <li><a href="three.html">Photos</a></li>
+            <li class="active"><a href="quiz.html">Quiz</a></li>
+        </ul>
+    </nav>
+    
+    <!-- start the page main -->
+    <main>
+        <h1>
+            <em>Tennis Trivia</em>
+        </h1>
+
+        <p>Do well and we might send you a prize.</p> <br>
+ 
+        <form method="get" class="myForm" action="appreciation.html">
+
+        <fieldset>
+        <legend>Participant Details</legend>
+        <label>First Name*<input type="text" name="fname" required>
+        </label>
+        <label>Middle Name* (You Better Have One)<input type="text" name="mname" required>
+        </label>
+        <label>Last Name*<input type="text" name="lname" required>
+        </label>
+        <label>Phone*<input type="tel" name="phone" required placeholder="123-456-7890">
+        </label>
+        <label>Email*<input type="email" name="email" required placeholder="tennis@gmail.com">
+        </label>
+        </fieldset>
+
+        <fieldset>
+        <legend>How Many Players in Singles?</legend>
+            <label><input type="radio" name="method" value="small">2
+            </label>
+            <label><input type="radio" name="method" value="medium">3
+            </label>
+            <label><input type="radio" name="method" value="large">4
+            </label>
+        </fieldset>
+
+        <fieldset>
+        <legend>Who's the Best Tennis Player Ever?</legend>
+            <label><input type="radio" name="best" value="nadal">Nadal
+            </label>
+            <label><input type="radio" name="best" value="djokovic">Djokovic (Hint: This One's Correct!)
+            </label>
+            <label><input type="radio" name="best" value="federer">Federer
+            </label>
+            <label><input type="radio" name="best" value="medvedev">Medvedev
+            </label>
+        </fieldset>
+
+        <fieldset>
+        <legend>Which of the Following Scores Are Possible?</legend>
+            <label><input type="checkbox" name="thirtylove" value="chosen">30-0
+            </label>
+            <label><input type="checkbox" name="fortyfivethirty" value="chosen">45-30
+            </label>
+            <label><input type="checkbox" name="fifteens" value="chosen">15-15
+            </label>
+            <label><input type="checkbox" name="thirtyforty" value="chosen">30-40
+            </label>
+
+            <label>And How Many Games to Win a Set?
+            <select name="time" id="idontcare">
+            <option value="none">Choose ONE</option>
+            <option value="fourfive">4 or 5</option>
+            <option value="fivesix">5 or 6</option>
+            <option value="afternoon">6 or 7</option>
+            <option value="evening">7 or 8</option>
+            <option value="evening">None of These</option>
+            </select>
+            </label>
+        </fieldset>
+
+        <label> Open-Ended Question
+            <textarea name="comments" placeholder="What do you like most about tennis so far?"></textarea>
+        </label>
+
+
+        <input type="submit" value="Submit">
+        </form>
+    
+        <address>
+            Author: Aiden C.G. <br>
+             Phone: <a href="tel:+234-334-4523">234-334-4523</a> <br>
+            Address: Unknown, Utah, United States
+        </address>
+        
+    </main>
+    
+    <!-- start the page footer -->
+    <footer>
+        <p>&copy; 2026 Tennis 101 &bull; Aiden C.G. &bull; Web Essentials</p>
+    </footer>
+</body>
+</html>

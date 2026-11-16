@@ -1,0 +1,228 @@
+*{box-sizing: border-box;}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+header {
+     background-color: #216CED;
+}
+
+header span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #B2ED1D;
+}
+
+/* Micronavigation (That's a Word Now) */
+@media only screen and (max-width: 800px) {
+    nav ul {
+        margin: 0rem;
+        padding: 0;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        padding: 0.8rem;
+        color: #8C501B;
+        text-decoration: none;
+        border-bottom: solid 2px white;
+        font-weight: 700;
+    }
+    nav .active a {
+        background-color: #8C501B;
+        background-image: linear-gradient(to bottom, #8C501B, #216CED)
+    }
+
+    nav {
+        background-color: #B2ED1D;
+    }
+}
+
+/*LARGE SCREEN NAVIGATION */
+@media only screen and (min-width: 801px) {
+
+nav {
+    background-color: #B2ED1D;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    padding: 0px;
+}
+
+nav a {
+    padding: .7rem 1rem;
+    display: block;
+    text-decoration: none;
+    color: #991500;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+}
+
+nav li a:hover {
+    color: white;
+}
+
+nav li.active a {
+    background-color: #991500;
+    color: #F2B705;
+}
+
+main {
+    padding: 1rem 10px;
+}
+
+main h1 {
+    color: #27416E;
+}
+
+main h2 {
+    color: #991500;
+}
+
+main p {
+    margin: 0;
+    color: #000;
+}
+
+main ol {
+    padding: 1rem 30px;
+}
+
+/* Hey */
+
+main dl dt {
+    color: #910500;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+main dl dd {
+    color: #000;
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-top: 1rem;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+main ul li {
+    line-height: 125%;
+    margin-bottom: 0.7rem;
+    font-size: 1rem;
+}
+
+main address {
+    font-style: normal;
+    background-color: #216CED;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 5px double #910500;
+}
+
+footer {
+    background-color: #EDE1DF;
+    text-align: left;
+    padding: 1rem 10px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    color: #216CED;
+    letter-spacing: 1px;
+}
+
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2cap;
+    row-gap: 30px;
+}
+
+div.gallery figure {
+    margin: 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+    color: #910500;
+}
+
+
+
+
+
+
+
+.myForm fieldset {
+    border: 1px solid #910500;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.myForm legend {
+    color: #910500;
+    font-size: .8rem;
+}
+
+.myForm label {
+    margin: .5rem;
+}
+
+.myForm label, .myForm select, .myForm [type=text], .myForm [type=tel], [type=email], .myForm textarea {
+    display: block;
+}
+
+.myForm [type=text], .myForm [type=tel], [type=email], .myForm select, .myForm textarea {
+    border: solid 1px #F2B705;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 200;
+}
+
+.myForm textarea {
+    height: 6rem;
+}
+
+.myForm :required {
+    background-color: rgba(156,51,53,0.1);
+}
+
+.myForm [type=submit] {
+    background-color: #516CED;
+    border: none;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    color: #F2B705;
+    margin:  2rem 3rem 1rem 0.5rem;
+    font-size: large;
+    font-weight: 700;
+}
+
+header, nav, main, footer {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+}
+
+div.gallery img:hover {
+    box-shadow: 0px 0px 20px blue;
+}
